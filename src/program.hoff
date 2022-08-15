@@ -1,0 +1,9 @@
+hoff program ( y, x, z, t ) ;
+var x, y, z, t: integer;
+inicioPrograma
+y = 4 ;
+x = 2 ;
+z = x * y ;
+t = 5 ;
+if z > x then { screen(t) }
+fimPrograma;

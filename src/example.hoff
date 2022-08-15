@@ -1,0 +1,11 @@
+hoff sort (arr, i, j, temp, x) ;
+var i, j, temp, x: integer;
+var arr: array [0..4] of integer;
+inicioPrograma
+i = 1;
+arr = { 11, 15, 21, 34, 7 };
+screen(arr);
+arr[2] = 37;
+while i < 6 do { j = i; while j > 0 do { if arr[j] < arr[j-1] then { temp = arr[j]; arr[j] = arr[j-1]; arr[j-1] = temp }; j = j - 1 }; i = i + 1 };
+screen(arr)
+fimPrograma;
